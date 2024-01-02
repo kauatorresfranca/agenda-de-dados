@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contato</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="formulario">
+            <header>
+                <img src="./images/1ddbe1e99b033293fab57a43d2a7d3fc.jpg" alt="imagem de telefone"/>
+                <h1>Agenda de contatos</h1>
+            </header>
+            <form>
+                <input id="nome-usuario" type="text" required placeholder="Nome">
+                <input id="telefone-usuario" type="tel" required placeholder="(82) 9612-4145">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <h2>Contatos</h2>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="corpo">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>---</td>
+                    <td><span class="resultado aprovado">---</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
